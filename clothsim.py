@@ -123,7 +123,7 @@ while True:
             points[grabbed_index].position = mousepos
             grabbed_index = None
 
-    if pygame.mouse.get_pressed()[1]: # Cut
+    if pygame.mouse.get_pressed()[1] or pygame.key.get_pressed()[pygame.K_LSHIFT]: # Cut
         mousepos = pygame.mouse.get_pos()
         smallest_index = 0
         smallest_distace = 1000
